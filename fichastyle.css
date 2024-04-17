@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "pokemon";
+  src: url("./resources/fonts/Pokemon\ Solid.ttf");
+}
+label {
+  font-size: 2rem;
+  margin-left: 2%;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  font-family: "linux";
+}
+.stats label{
+  margin-bottom: 5%;
+}
+#ancla {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#ancla img {
+  height: 50px;
+  width: 50px;
+}
+.habilidades, .tipos{
+  margin-bottom: 1% !important;
+  padding: 1%;
+}
+.container {
+  background-image: url("./resources/img/fondo2.jpg");
+  background-size: cover;
+  border: 3px solid;
+  border: 5px solid #0075be;
+}
+.nombre p,
+.tipos p,
+.habilidades p,
+.stats p,
+span {
+  font-family: "pokemon";
+  color: #ffcc00;
+  text-shadow: 4px 0px 0px #0075be, -4px 0px 0px #0075be, 0px 4px 0px #0075be,
+    0px -4px 0px #0075be, 2px 2px 0px #0075be, -2px 2px 0px #0075be,
+    2px -2px 0px #0075be, -2px -2px 0px #0075be;
+  letter-spacing: 0.225rem;
+  font-size: 1.3rem;
+}
+.stats {
+  padding: 2%;
+  border: #ffffff 5px solid;
+  background-color: rgba(240, 248, 255, 0.308);
+  border-radius: 10px;
+}
+.ficha {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.habilidades,
+.nombre,
+.tipos {
+  display: flex;
+  margin-bottom: 2%;
+  width: 50%;
+  margin: auto;
+  border: #ffffff 5px solid;
+  background-color: rgba(240, 248, 255, 0.308);
+  border-radius: 10px;
+}
+.stats,
+.tipos{
+    margin-top: 2% !im;
+}
+p {
+  margin-left: 10%;
+}
+.stats {
+  display: block;
+  margin-bottom: 2%;
+  width: 50%;
+  margin: auto;
+}
+.info img {
+  width: 250px;
+  border: #ffffff 5px solid;
+  border-radius: 140px;
+  background-color: rgba(240, 248, 255, 0.308);
+}
