@@ -9,7 +9,7 @@ label {
   color: rgb(255, 0, 0);
   font-family: "linux";
 }
-.stats label{
+.stats label {
   margin-bottom: 5%;
 }
 #ancla {
@@ -21,15 +21,15 @@ label {
   height: 50px;
   width: 50px;
 }
-.habilidades, .tipos{
+.habilidades,
+.tipos {
   margin-bottom: 1% !important;
   padding: 1%;
 }
 .container {
   background-image: url("./resources/img/fondo2.jpg");
   background-size: cover;
-  border: 3px solid;
-  border: 5px solid #0075be;
+  border: 5px solid #ffcc00;
 }
 .nombre p,
 .tipos p,
@@ -64,15 +64,15 @@ span {
 .tipos {
   display: flex;
   margin-bottom: 2%;
-  width: 50%;
+  width: 70%;
   margin: auto;
   border: #ffffff 5px solid;
   background-color: rgba(240, 248, 255, 0.308);
   border-radius: 10px;
 }
 .stats,
-.tipos{
-    margin-top: 2% !important;
+.tipos {
+  margin-top: 2% !important;
 }
 p {
   margin-left: 10%;
@@ -88,4 +88,83 @@ p {
   border: #ffffff 5px solid;
   border-radius: 140px;
   background-color: rgba(240, 248, 255, 0.308);
+  margin-bottom: 10%;
+}
+@media (max-width: 1000px) {
+  .nombre {
+    width: 300px;
+  }
+  .habilidades{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 775px) {
+  .info {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .container {
+    height: 990px;
+  }
+  .info img {
+    margin: auto;
+    margin-bottom: 2%;
+    width: 200px;
+  }
+  .habilidades {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 450px;
+  }
+  .tipos {
+    margin-bottom: 2%;
+    width: 300px;
+  }
+  .stats {
+    width: 300px;
+  }
+  .stats p,
+  .habilidades p,
+  .tipos p {
+    font-size: 1rem;
+  }
+  label{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  label {
+    font-size: 1rem;
+  }
+  .info img{
+    width: 200px !important;
+  }
+  .habilidades {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .stats p,
+  .habilidades p,
+  .tipos p {
+    font-size: 0.9rem;
+  }
+  .stats,
+  .habilidades,
+  .tipos,
+  .stats,
+  .nombre {
+    width: 250px;
+  }
+  .habilidades p {
+    font-size: 0.9rem;
+  }
+  .container {
+    width: 391px;
+  }
+}
+@media (max-width: 480px) {
+
 }
