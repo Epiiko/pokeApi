@@ -3,17 +3,18 @@
   src: url("./resources/fonts/Pokemon\ Solid.ttf");
 }
 
-*{
+* {
   font-family: "pokemon";
-  color:#FFCC00 ;
-  text-shadow: 4px 0px 0px #0075BE, -4px 0px 0px #0075BE, 0px 4px 0px #0075BE, 0px -4px 0px #0075BE,
-      2px 2px 0px #0075BE, -2px 2px 0px #0075BE, 2px -2px 0px #0075BE, -2px -2px 0px #0075BE;
+  color: #ffcc00;
+  text-shadow: 4px 0px 0px #0075be, -4px 0px 0px #0075be, 0px 4px 0px #0075be,
+    0px -4px 0px #0075be, 2px 2px 0px #0075be, -2px 2px 0px #0075be,
+    2px -2px 0px #0075be, -2px -2px 0px #0075be;
   letter-spacing: 0.225rem;
 }
-body>div.container{
+body > div.container {
   padding: 0;
 }
-#capa{
+#capa {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.421);
@@ -26,22 +27,24 @@ body>div.container{
   width: 80%;
   border-radius: 10px;
 }
-#nav label{
+#nav label {
   margin-bottom: 3%;
 }
 
-input[type="text"]{
+input[type="text"] {
   width: 60%;
 }
-input[type="button"]{
+input[type="button"] {
   width: 40%;
   margin-top: 2%;
 }
-h1, h2{
-  text-shadow: 4px 0px 0px #0075BE, -4px 0px 0px #0075BE, 0px 4px 0px #0075BE, 0px -4px 0px #0075BE,
-      2px 2px 0px #0075BE, -2px 2px 0px #0075BE, 2px -2px 0px #0075BE, -2px -2px 0px #0075BE, 0px 0px 30px rgb(4, 255, 0);
+h1,
+h2 {
+  text-shadow: 4px 0px 0px #0075be, -4px 0px 0px #0075be, 0px 4px 0px #0075be,
+    0px -4px 0px #0075be, 2px 2px 0px #0075be, -2px 2px 0px #0075be,
+    2px -2px 0px #0075be, -2px -2px 0px #0075be, 0px 0px 30px rgb(4, 255, 0);
 }
-input[type="button"]{
+input[type="button"] {
   color: white !important;
 }
 label {
@@ -49,34 +52,33 @@ label {
   margin-left: 2%;
   font-size: 1.3rem;
 }
-#pokemons{
+#pokemons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 .pokemon {
- background-color: #0075bef6;
- border: #FFCC00 5px solid;
- margin: 2%;
+  background-color: #0075bef6;
+  border: #ffcc00 5px solid;
+  margin: 2%;
 }
 .container {
   text-align: center;
   background-image: url("./resources/img/fondo.jpg");
   height: 100%;
 }
-.name_poke{
-    font-size: 1.8rem;
-    background-color: #e42626fe;
-    border-bottom: solid black 4px;
-    padding-bottom: 2%;
+.name_poke {
+  font-size: 1.8rem;
+  background-color: #e42626fe;
+  border-bottom: solid black 4px;
+  padding-bottom: 2%;
 }
 .img_poke {
   width: 200px;
-  background-image:url("./resources/img/pokeball_PNG29.png");
+  background-image: url("./resources/img/pokeball_PNG29.png");
   background-size: cover;
   margin-top: 4%;
 }
-.ability_poke{
+.ability_poke {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-around;
@@ -84,18 +86,17 @@ label {
   border-bottom: solid black 2px;
   color: black;
 }
-.ability_poke p{
-  border:3px solid #FFCC00;
+.ability_poke p {
+  border: 3px solid #ffcc00;
   padding: 2%;
   background-color: #ffffff;
   font-size: 1rem;
   border-radius: 10px;
-
 }
-.miniText{
+.miniText {
   font-size: 0.9rem !important;
 }
-.info_poke{
+.info_poke {
   margin-top: 8%;
   border-top: solid black 4px;
   color: white;
@@ -103,41 +104,79 @@ label {
   height: max-content;
 }
 @media (max-width: 1200px) {
-  #pokemons{
+  #pokemons {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 770px) {
-  #pokemons{
+  #pokemons {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
-  #nav label{
+  #nav label {
     margin-bottom: 3%;
   }
-  .pokemon{
+  .pokemon {
     width: 70%;
     margin: auto;
     margin-bottom: 4%;
   }
 
-  input[type="button"]{
+  input[type="button"] {
     width: 30%;
     margin-top: 2%;
   }
+  h1,
+  h2 {
+    font-size: 1.1rem;
+  }
+  body {
+    width: fit-content;
+  }
+  .container {
+    width: 100%;
+    margin-left: 15%;
+  
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    margin-left: 5%;
+  
+  }
 }
 @media (max-width: 380px) {
-  .container{
-    width: 350px;
+  .container {
+    width: 340px;
+    padding: 60px;
   }
-  .pokemon{
+  #nav{
+    margin-left: 5%;
+  }
+  .pokemon {
     width: 70%;
-    margin: auto;
+    margin-left: 10% !important;
     margin-bottom: 4%;
   }
-  h1, h2{
-    font-size: 1rem;
-    margin: auto;
+  .miniText {
+    font-size: 0.8rem !important;
   }
+  h1,
+  h2 {
+    font-size: 0.8rem;
+  }
+  input[type="button"] {
+    font-size: 0.6rem;
+  }
+  .pokemon {
+    width: 70%;
+    margin-left: 2%;
+  }
+  .miniText {
+    border: none !important;
+    padding: 0;
+    background-color: transparent !important;
+  }
+
 }

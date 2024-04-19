@@ -17,11 +17,15 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonName)
       document.querySelector(".tipos").appendChild(p);
     }
     for (let i = 0; i < datos.stats.length; i++) {
-        console.log(datos.stats[i]);
-        let p = document.createElement("p");
-        p.textContent=primeraMayus(datos.stats[i].stat.name)+ ": " + datos.stats[i].base_stat;
-        document.querySelector(".stats").appendChild(p);
+      console.log(datos.stats[i]);
+      let p = document.createElement("p");
+      p.textContent =
+        primeraMayus(datos.stats[i].stat.name) +
+        ": " +
+        datos.stats[i].base_stat;
+      document.querySelector(".stats").appendChild(p);
     }
+    cambiarFoto(datos);
   });
 function primeraMayus(palabra) {
   return palabra.charAt(0).toUpperCase() + palabra.slice(1);
@@ -29,3 +33,4 @@ function primeraMayus(palabra) {
 document.querySelector("#ancla").addEventListener("click", () => {
   location.href = "index.html";
 });
+

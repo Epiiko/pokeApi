@@ -2,11 +2,10 @@ function crearCarta(datos) {
   //creamos la carta del pokemon
   let divPoke = document.createElement("div");
   divPoke.classList.add("pokemon");
-  divPoke.addEventListener("click",()=>{
+  divPoke.addEventListener("click", () => {
     localStorage.setItem("pokemon", datos.name);
-    window.location.href="ficha.html";
-    
-  })
+    window.location.href = "ficha.html";
+  });
   //creamos la imagen que es el primer elemento
   let img = document.createElement("img");
   img.setAttribute("src", datos.sprites.front_default);
@@ -119,8 +118,10 @@ document
           }
         });
         if (!encontrado) {
-          alert("El pokemon no existe");
           cargarTodos();
+          setTimeout(() => {
+            alert("El pokemon no existe");
+          }, 500);
         }
       });
   });
